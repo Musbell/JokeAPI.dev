@@ -26,7 +26,6 @@ paths:
       parameters:
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -57,7 +56,6 @@ paths:
       parameters:
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -89,7 +87,6 @@ paths:
 
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -121,7 +118,6 @@ paths:
 
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -153,7 +149,6 @@ paths:
 
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -185,7 +180,6 @@ paths:
 
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -217,7 +211,6 @@ paths:
     
         - $ref: '#/components/parameters/typeParam'
         - $ref: '#/components/parameters/containsParam'
-        - $ref: '#/components/parameters/idRangeParam'
         - $ref: '#/components/parameters/amountParam'
         - $ref: '#/components/parameters/safemodeParam'
       responses:
@@ -258,13 +251,6 @@ components:
       name: contains
       in: query
       description: "If this parameter is specified, only jokes that contain the value of this parameter will be served (case insensitive)."
-      required: false
-      schema:
-        type: string
-    idRangeParam:
-      name: idRange
-      in: query
-      description: "If it is used, you will only get jokes that are inside the specified range of IDs.The lower and upper boundary of the ID range needs to be delimited with a minus (-), comma (,) or a plus sign (+). If you only want to get a single joke by its ID, you can also ignore the delimiter and just use the single ID as the value for this parameter."
       required: false
       schema:
         type: string
