@@ -22,6 +22,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in any category."
+      description: "Joke look-up in any category."
       operationId: any
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -52,6 +53,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in miscellaneous category."
+      description: "Joke look-up in miscellaneous category."
       operationId: misc
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -82,6 +84,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in programming category."
+      description: "Joke look-up in programming category."
       operationId: programming
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -112,6 +115,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in dark category."
+      description: "Joke look-up in dark category."
       operationId: dark
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -142,6 +146,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in pun category."
+      description: "Joke look-up in pun category."
       operationId: pun
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -172,6 +177,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in spooky category."
+      description: "Joke look-up in spooky category."
       operationId: spooky
       parameters:
         - $ref: "#/components/parameters/typeParam"
@@ -202,6 +208,7 @@ paths:
       tags:
         - jokes
       summary: "Joke look-up in christmas category."
+      description: "Joke look-up in christmas category."
       operationId: christmas
       parameters:
         - $ref: "#/components/parameters/typeParam"
